@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #0d1b2a;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1b263b;
+    color: #e0e1dd;
+    width: 100%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #415a77;
+    padding: 10px;
+    width: 100%;
+}
+
+nav a {
+    color: #e0e1dd;
+    text-decoration: none;
+    font-size: 1.1em;
+    margin: 0 15px;
+    padding: 5px 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav a:hover {
+    color: #1b263b;
+    background-color: #e0e1dd;
+    border-radius: 5px;
+}
+
+section {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1b263b;
+    color: #e0e1dd;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #e0e1dd;
+}
+
+section p {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+article {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #2e3b52;
+    border-radius: 8px;
+}
+
+article h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: #e0e1dd;
+}
+
+article p {
+    font-size: 1.1em;
+}
+
+audio {
+    display: block;
+    margin: 15px auto;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #415a77;
+    color: #e0e1dd;
+    font-size: 0.9em;
+    width: 100%;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav a {
+        font-size: 1em;
+        margin: 0 10px;
+    }
+
+    section h2 {
+        font-size: 1.6em;
+    }
+
+    article h3 {
+        font-size: 1.3em;
+    }
+
+    section, article {
+        padding: 15px;
+    }
+}
