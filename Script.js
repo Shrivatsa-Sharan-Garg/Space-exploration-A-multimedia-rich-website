@@ -17,10 +17,8 @@ function showDataOnUI(data) {
   const imgContainer = document.getElementById("image-container");
   let img = document.createElement("img");
   img.src = data.hdurl;
-  img.height = 500;
-  img.width = 500;
   img.alt = data.title;
-  imgContainer.appendChild(img);
+  imgContainer.style.backgroundImage = `url(${data.hdurl})`;
 }
 
 fetchData();
