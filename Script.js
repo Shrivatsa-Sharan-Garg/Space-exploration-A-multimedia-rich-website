@@ -1,8 +1,8 @@
-const apiKey = 'NASA_API_KEY';
+const apiKey = '1Xg2FffmZHikbXqgFi5e1eG3F42Q7QBvnOHk6Udd';
 
 async function fetchData() {
   try {
-    const response = await fetch(https://api.nasa.gov/planetary/apod?api_key=${1Xg2FffmZHikbXqgFi5e1eG3F42Q7QBvnOHk6Udd});
+const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}`);
     if (!response.ok) {
       throw new Error('Failed to fetch data');
     }
