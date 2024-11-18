@@ -14,9 +14,13 @@ async function fetchData(date, sectionId) {
 }
 
 function showDataOnUI(data, sectionId) {
-    const section = document.getElementById(sectionId);
+    const factsContainer = document.querySelector('.Facts');
     const imgContainer = document.createElement("div");
     imgContainer.classList.add("image-container");
+
+    const title = document.createElement("h2");
+    title.classList.add("section-title");
+    title.textContent = sectionId.charAt(0).toUpperCase() + sectionId.slice(1);
 
     const img = document.createElement("img");
     img.src = data.hdurl || data.url; 
@@ -25,22 +29,25 @@ function showDataOnUI(data, sectionId) {
     const caption = document.createElement("p");
     caption.textContent = data.explanation;
 
+    imgContainer.appendChild(title);
     imgContainer.appendChild(img);
     imgContainer.appendChild(caption);
-    section.appendChild(imgContainer);
+    factsContainer.appendChild(imgContainer);
 }
 
 const dates = {
-    universe: '2024-11-01', 
-    solarSystem:'',
-    mercury: '',
-    venus: '',
-    earth: '2024-11-06',
+    'NGC 6744': '2024-11-01', 
+    'Great Nebula': '2024-11-04',
+    'Easter Island': '2024-11-05',
+    'intergalactic skyscape': '2024-11-07',
+    'Comet Tsuchinshan-Atlas': '2024-11-06',
     mars: '2024-11-10',
     saturn: '2024-11-02',
     jupiter: '2024-11-03',
-    uranus: '',
+    'Milky Way Galaxy': '2024-11-08',
     neptune: '2024-11-09',
+    'Moon': '2024-11-15',
+    'Pluto': '2024-11-16',
 };
 
 Object.entries(dates).forEach(([sectionId, date]) => fetchData(date, sectionId));
