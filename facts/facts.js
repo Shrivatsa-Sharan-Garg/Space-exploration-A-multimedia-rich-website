@@ -1,17 +1,4 @@
-const apiKey = '1Xg2FffmZHikbXqgFi5e1eG3F42Q7QBvnOHk6Udd';
-
-async function fetchData(date, sectionId) {
-    try {
-        const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${date}`);
-        if (!response.ok) {
-            throw new Error('Failed to fetch data');
-        }
-        const data = await response.json();
-        showDataOnUI(data, sectionId);
-    } catch (error) {
-        console.error('Error fetching data:', error);
-    }
-}
+import { fetchData } from '../main/api.js';
 
 function showDataOnUI(data, sectionId) {
     const factsContainer = document.querySelector('.Facts');
@@ -36,7 +23,7 @@ function showDataOnUI(data, sectionId) {
 }
 
 const dates = {
-    'NGC 6744': '2024-11-01', 
+    'NGC 6744': '2024-11-01',
     'Great Nebula': '2024-11-04',
     'Easter Island': '2024-11-05',
     'intergalactic skyscape': '2024-11-07',
@@ -50,4 +37,9 @@ const dates = {
     'Pluto': '2024-11-16',
 };
 
-Object.entries(dates).forEach(([sectionId, date]) => fetchData(date, sectionId));
+Object.entries(dates).forEach(async ([sectionId, date]) => {
+    const data = await fetchData(date);
+    if (data) {
+        showDataOnUI(data, sectionId);
+    }
+});

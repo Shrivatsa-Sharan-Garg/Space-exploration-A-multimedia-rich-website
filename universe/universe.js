@@ -1,15 +1,11 @@
-const apiKey = '1Xg2FffmZHikbXqgFi5e1eG3F42Q7QBvnOHk6Udd';
+import { fetchData } from '../main/api.js';
 
-async function fetchData(date, sectionId) {
+async function displaySpaceData(date, sectionId) {
     try {
-        const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${date}`);
-        if (!response.ok) {
-            throw new Error('Failed to fetch data');
-        }
-        const data = await response.json();
+        const data = await fetchData(date, sectionId);
         showDataOnUI(data, sectionId);
     } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error('Error displaying data:', error);
     }
 }
 
@@ -50,4 +46,4 @@ const dates = {
     'Pluto': '2024-11-16',
 };
 
-Object.entries(dates).forEach(([sectionId, date]) => fetchData(date, sectionId));
+Object.entries(dates).forEach(([sectionId, date]) => displaySpaceData(date, sectionId));
