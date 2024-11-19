@@ -14,7 +14,7 @@ async function fetchData(date, sectionId) {
 }
 
 function showDataOnUI(data, sectionId) {
-    const factsContainer = document.querySelector('.Facts');
+    const factsContainer = document.querySelector('.Universe');
     const imgContainer = document.createElement("div");
     imgContainer.classList.add("image-container");
 
