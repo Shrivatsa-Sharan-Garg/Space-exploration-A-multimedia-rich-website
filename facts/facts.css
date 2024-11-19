@@ -1,52 +1,132 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #1a1a1a;
-    color: white;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: radial-gradient(circle at center, #000020, #000010 80%, #000000);
+    color: #e0e0e0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png');
+    opacity: 0.2;
+    z-index: 0;
+}
+
+a {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(135deg, #ff5733, #c70039);
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(255, 87, 51, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;
+}
+
+a:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 30px rgba(255, 87, 51, 0.7);
 }
 
 h1 {
+    margin-top: 60px;
     text-align: center;
-    color: #00ff9d;
-    margin-bottom: 40px;
+    font-size: 3rem;
+    color: #ffdd00;
+    text-shadow: 0 0 20px #ffcc00, 0 0 40px #ffffff;
+    z-index: 1;
 }
 
 .Facts {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px 20px;
+    width: 100%;
+    z-index: 1;
 }
 
 .image-container {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    background: linear-gradient(145deg, #1e2030, #2c2f50);
+    border: 1px solid #3c3f60;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    transform: translateY(0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    z-index: 1;
 }
 
 .image-container:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3), 0 0 30px rgba(0, 128, 255, 0.4);
+}
+
+.section-title {
+    margin: 0;
+    padding: 15px;
+    font-size: 1.5rem;
+    color: #00d4ff;
+    background: rgba(0, 0, 50, 0.7);
+    border-bottom: 1px solid #00d4ff;
+    text-shadow: 0 0 3px #00d4ff, 0 0 2px #ffffff;
 }
 
 .image-container img {
     width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 15px;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #3c3f60;
+    filter: brightness(0.9);
+    transition: filter 0.3s ease;
+}
+
+.image-container img:hover {
+    filter: brightness(1.1);
 }
 
 .image-container p {
-    font-size: 14px;
+    padding: 15px;
+    font-size: 1rem;
+    color: #e0e0e0;
     line-height: 1.6;
-    margin: 10px 0;
+    text-align: justify;
+    background: rgba(0, 0, 50, 0.8);
+    border-top: 1px solid #3c3f60;
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.1);
 }
 
-.section-title {
-    color: #00ff9d;
-    margin-bottom: 10px;
-    font-size: 1.2em;
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    a {
+        font-size: 1.5rem;
+        padding: 8px;
+    }
+
+    .section-title {
+        font-size: 1.2rem;
+    }
+
+    .image-container {
+        width: 90%;
+    }
 }
