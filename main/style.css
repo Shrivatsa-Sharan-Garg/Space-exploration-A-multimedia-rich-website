@@ -99,6 +99,16 @@ article h3 {
     margin-bottom: 10px;
 }
 
+article img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border: 2px solid #ffdd00;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 221, 0, 0.7);
+}
+
 article p {
     font-size: 1rem;
     color: #d0d0d0;
