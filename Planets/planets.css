@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: radial-gradient(circle, #000010, #00001a 80%, #000000);
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #1a1a3f, #2c2c5c);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ffdd00;
+    text-shadow: 0 0 5px #ffdd00, 0 0 5px #ffffff;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #b0b0b0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background: #121232;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #ffffff;
+    padding: 10px 15px;
+    background: linear-gradient(145deg, #0a0a3f, #1a1a5f);
+    border: 1px solid #303060;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #00e5ff;
+    background: linear-gradient(145deg, #1a1a5f, #0a0a3f);
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.7);
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: rgba(10, 10, 40, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #ff8000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section p {
+    text-align: justify;
+    color: #b0b0b0;
+}
+
+audio {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #ffdd00;
+    border-radius: 30px;
+}
+
+article {
+    padding: 20px;
+    margin: 20px 0;
+    background: rgba(20, 20, 60, 0.8);
+    border: 1px solid #3c3f60;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+article h3 {
+    font-size: 1.5rem;
+    color: #00e5ff;
+    margin-bottom: 10px;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border: 2px solid #ffdd00;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 221, 0, 0.7);
+}
+
+article p {
+    font-size: 1rem;
+    color: #d0d0d0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #1a1a3f, #2c2c5c);
+    color: #ffffff;
+    font-size: 0.9rem;
+    border-top: 1px solid #303060;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    section {
+        max-width: 90%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+        padding: 8px 10px;
+    }
+}
