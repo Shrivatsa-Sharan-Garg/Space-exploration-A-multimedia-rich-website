@@ -84,34 +84,14 @@ audio {
     border-radius: 30px;
 }
 
-article {
-    padding: 20px;
-    margin: 20px 0;
-    background: rgba(20, 20, 60, 0.8);
-    border: 1px solid #3c3f60;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
 
-article h3 {
-    font-size: 1.5rem;
-    color: #00e5ff;
-    margin-bottom: 10px;
-}
-
-article img {
+.universe-img, .solar-system-img {
     max-width: 100%;
     height: auto;
-    display: block;
-    margin: 10px auto;
     border: 2px solid #ffdd00;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(255, 221, 0, 0.7);
-}
-
-article p {
-    font-size: 1rem;
-    color: #d0d0d0;
+    margin-left: 5.4rem;
 }
 
 footer {
@@ -150,3 +130,4 @@ footer p {
         padding: 8px 10px;
     }
 }
+
