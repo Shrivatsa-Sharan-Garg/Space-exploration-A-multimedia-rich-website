@@ -48,3 +48,18 @@ button {
 button:hover {
     background: #005a9e;
 }
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #0078D7;
+    padding: 10px 0;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
