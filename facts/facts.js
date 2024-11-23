@@ -1,7 +1,16 @@
 import { fetchData } from '../main/api.js';
 
+async function displaySpaceData(date, sectionId) {
+    try {
+        const data = await fetchData(date, sectionId);
+        showDataOnUI(data, sectionId);
+    } catch (error) {
+        console.error('Error displaying data:', error);
+    }
+}
+
 function showDataOnUI(data, sectionId) {
-    const factsContainer = document.querySelector('.Facts');
+    const factsContainer = document.querySelector('.Facts'); 
     const imgContainer = document.createElement("div");
     imgContainer.classList.add("image-container");
 
@@ -23,9 +32,9 @@ function showDataOnUI(data, sectionId) {
 }
 
 const dates = {
-    'NGC 6744': '2024-11-01',
-    'Great Nebula': '2024-11-04',
-    'Easter Island': '2024-11-05',
+    'LDN 1471': '2024-11-17',
+    'NGC 281': '2024-11-18',
+    'M106': '2024-10-09',
     'intergalactic skyscape': '2024-11-07',
     'Comet Tsuchinshan-Atlas': '2024-11-06',
     mars: '2024-11-10',
@@ -37,9 +46,26 @@ const dates = {
     'Pluto': '2024-11-16',
 };
 
-Object.entries(dates).forEach(async ([sectionId, date]) => {
-    const data = await fetchData(date);
-    if (data) {
-        showDataOnUI(data, sectionId);
+Object.entries(dates).forEach(([sectionId, date]) => displaySpaceData(date, sectionId));
+
+function createStars(count) {
+    const background = document.querySelector('.background');
+    for (let i = 0; i < count; i++) {
+        const star = document.createElement('div');
+        star.classList.add('star');
+        const x = Math.random() * 100; 
+        const y = Math.random() * 100; 
+        const animationDuration = Math.random() * 5 + 5; 
+        const size = Math.random() * 2 + 1; 
+
+        star.style.left = `${x}%`;
+        star.style.top = `${y}%`;
+        star.style.width = `${size}px`;
+        star.style.height = `${size}px`;
+        star.style.animationDuration = `${animationDuration}s`;
+
+        background.appendChild(star);
     }
-});
+}
+
+createStars(100);

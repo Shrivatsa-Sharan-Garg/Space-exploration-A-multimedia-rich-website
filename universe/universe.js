@@ -19,7 +19,7 @@ function showDataOnUI(data, sectionId) {
     title.textContent = sectionId.charAt(0).toUpperCase() + sectionId.slice(1);
 
     const img = document.createElement("img");
-    img.src = data.hdurl || data.url; 
+    img.src = data.hdurl || data.url;
     img.alt = data.title;
 
     const caption = document.createElement("p");
@@ -32,7 +32,7 @@ function showDataOnUI(data, sectionId) {
 }
 
 const dates = {
-    'LDN 1471': '2024-11-17', 
+    'LDN 1471': '2024-11-17',
     'NGC 281': '2024-11-18',
     'M106': '2024-10-09',
     'intergalactic skyscape': '2024-11-07',
@@ -48,3 +48,16 @@ const dates = {
 
 Object.entries(dates).forEach(([sectionId, date]) => displaySpaceData(date, sectionId));
 
+function createStars(count) {
+    const background = document.querySelector('.background');
+    for (let i = 0; i < count; i++) {
+        const star = document.createElement('div');
+        star.classList.add('star');
+        star.style.left = `${Math.random() * 100}vw`;
+        star.style.top = `${Math.random() * 100}vh`;
+        star.style.animationDuration = `${Math.random() * 10 + 5}s`;
+        background.appendChild(star);
+    }
+}
+
+createStars(100); 

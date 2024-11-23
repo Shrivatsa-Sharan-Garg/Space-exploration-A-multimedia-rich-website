@@ -1,14 +1,40 @@
-body {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
     font-family: 'Verdana', sans-serif;
     background: radial-gradient(circle at center, #0d1b2a, #1b263b, #415a77, #1b263b);
     color: #ffffff;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    overflow-y: auto; 
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; 
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: #fff;
+    border-radius: 50%;
+    animation: starAnimation 10s linear infinite;
+}
+
+.content {
+    position: relative;
+    z-index: 1; 
+    padding: 20px;
 }
 
 a {
@@ -23,6 +49,7 @@ a {
     border-radius: 50%;
     box-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00;
     transition: transform 0.3s ease;
+    animation: glow 1.5s ease-in-out infinite;
 }
 
 a:hover {
@@ -54,11 +81,11 @@ h1 {
     overflow: hidden;
     box-shadow: 0 0 10px #ffcc00, 0 0 30px #ffffff;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
 .image-container:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
     box-shadow: 0 0 20px #ffcc00, 0 0 40px #ffffff;
 }
 
@@ -69,14 +96,12 @@ h1 {
     background: linear-gradient(to right, #ffcc00, #ffffff);
     color: #000;
     font-weight: bold;
-    text-shadow: 0 0 5px #000;
 }
 
 .image-container img {
     width: 100%;
     height: auto;
     border-bottom: 2px solid #ffcc00;
-    margin: 0;
 }
 
 .image-container p {
@@ -85,23 +110,22 @@ h1 {
     color: #ffffff;
     line-height: 1.6;
     text-align: justify;
-    text-shadow: 0 0 5px #000;
 }
 
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00;
     }
-
-    a {
-        font-size: 1.2rem;
+    50% {
+        box-shadow: 0 0 20px #ffcc00, 0 0 40px #ffcc00;
     }
+}
 
-    .section-title {
-        font-size: 1.2rem;
+@keyframes starAnimation {
+    from {
+        transform: translateY(0);
     }
-
-    .image-container p {
-        font-size: 0.9rem;
+    to {
+        transform: translateY(100vh);
     }
 }
