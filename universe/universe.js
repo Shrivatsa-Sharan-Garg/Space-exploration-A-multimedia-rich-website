@@ -47,3 +47,4 @@ const dates = {
 };
 
 Object.entries(dates).forEach(([sectionId, date]) => displaySpaceData(date, sectionId));
+
