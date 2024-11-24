@@ -1,12 +1,14 @@
 const API_KEY = "bY6Q-_0I7DhfBJo9-h7b0TwzKCDQKBAF1h_Q_w-rjAk";
+const QUERY = "Space";  
+const NO = 24;
 
 function fetchImages() {
-    const url = `https://api.unsplash.com/search/photos?client_id=${API_KEY}&query=space&per_page=12`; 
+    const url = `https://api.unsplash.com/search/photos?client_id=${API_KEY}&query=${QUERY}&per_page=${NO}`;
 
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            displayImages(data.results);
+            displayImages(data.results);  
         })
         .catch(error => console.error("Error fetching images:", error));
 }
@@ -15,21 +17,27 @@ function displayImages(images) {
     const gallery = document.getElementById("gallery");
 
     images.forEach(image => {
-        const imageContainer = document.createElement("div");
-        imageContainer.classList.add("gallery-item");
+        const galleryItem = document.createElement("div");
+        galleryItem.classList.add("gallery-item");
 
         const img = document.createElement("img");
-        img.src = image.urls.small; 
+        img.src = image.urls.small;
         img.alt = image.alt_description || "Space Image";
-        imageContainer.appendChild(img);
 
-        const downloadButton = document.createElement("button");
-        downloadButton.innerText = "Download";
-        downloadButton.classList.add("download-btn");
-        downloadButton.addEventListener("click", () => downloadImage(image.urls.full)); 
-        imageContainer.appendChild(downloadButton);
+        galleryItem.appendChild(img);
 
-        gallery.appendChild(imageContainer);
+        img.onload = () => {
+            const rowSpan = Math.ceil(img.naturalHeight / 100);
+            galleryItem.style.gridRowEnd = `span ${rowSpan}`;
+        };
+
+        const downloadBtn = document.createElement("button");
+        downloadBtn.classList.add("download-btn");
+        downloadBtn.innerText = "Download";
+        downloadBtn.addEventListener("click", () => downloadImage(image.urls.full));
+        galleryItem.appendChild(downloadBtn);
+
+        gallery.appendChild(galleryItem);
     });
 }
 
@@ -39,10 +47,10 @@ function downloadImage(url) {
         .then(blob => {
             const link = document.createElement("a");
             link.href = URL.createObjectURL(blob);
-            link.download = "space-image.jpg"; 
+            link.download = "space-image.jpg";
             document.body.appendChild(link);
             link.click();
-            document.body.removeChild(link); 
+            document.body.removeChild(link);
         })
         .catch(error => console.error("Error downloading image:", error));
 }
@@ -50,7 +58,7 @@ function downloadImage(url) {
 fetchImages();
 
 function createStars(count) {
-    const background = document.body; 
+    const background = document.body;
     for (let i = 0; i < count; i++) {
         const star = document.createElement('div');
         star.classList.add('star');

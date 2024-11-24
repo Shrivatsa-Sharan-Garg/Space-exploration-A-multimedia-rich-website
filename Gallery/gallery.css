@@ -59,6 +59,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
+    grid-auto-flow: dense;
 }
 
 .gallery-item {
@@ -66,11 +67,13 @@ section {
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    grid-row-end: span 1;
 }
 
 .gallery-item img {
+    height: 100%;
     width: 100%;
-    height: auto;
+    object-fit: cover;
     display: block;
 }
 
