@@ -35,13 +35,13 @@ const dates = {
     'LDN 1471': '2024-11-17',
     'NGC 281': '2024-11-18',
     'M106': '2024-10-09',
-    'intergalactic skyscape': '2024-11-07',
+    'Intergalactic skyscape': '2024-11-07',
     'Comet Tsuchinshan-Atlas': '2024-11-06',
-    mars: '2024-11-10',
-    saturn: '2024-11-02',
-    jupiter: '2024-11-03',
+    Mars: '2024-11-10',
+    Saturn: '2024-11-02',
+    Jupiter: '2024-11-03',
     'Milky Way Galaxy': '2024-11-08',
-    neptune: '2024-11-09',
+    Neptune: '2024-11-09',
     'Moon': '2024-11-15',
     'Pluto': '2024-11-16',
 };
@@ -55,6 +55,8 @@ function createStars(count) {
         star.classList.add('star');
         star.style.left = `${Math.random() * 100}vw`;
         star.style.top = `${Math.random() * 100}vh`;
+        star.style.width = `${Math.random() * 3 + 2}px`; 
+        star.style.height = star.style.width; 
         star.style.animationDuration = `${Math.random() * 10 + 5}s`;
         background.appendChild(star);
     }

@@ -56,7 +56,7 @@ function createStars(count) {
         const x = Math.random() * 100; 
         const y = Math.random() * 100; 
         const animationDuration = Math.random() * 5 + 5; 
-        const size = Math.random() * 2 + 1; 
+        const size = Math.random() * 4 + 2; 
 
         star.style.left = `${x}%`;
         star.style.top = `${y}%`;

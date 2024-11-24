@@ -4,8 +4,8 @@ window.addEventListener('scroll', function() {
     const screenPosition = window.innerHeight / 1.5;
 
     if (sectionPosition < screenPosition) {
-        section.classList.add('visible'); // Add visible class when scrolled into view
+        section.classList.add('visible');
     } else {
-        section.classList.remove('visible'); // Remove visible class when scrolled out of view
+        section.classList.remove('visible'); 
     }
 });

@@ -4,7 +4,7 @@ function createFallingStars(count) {
         const fallingStar = document.createElement('div');
         fallingStar.classList.add('star', 'falling-star');
         const x = Math.random() * 100; 
-        const size = Math.random() * 2 + 1;
+        const size = Math.random() * 4 + 2; 
         const animationDuration = Math.random() * 3 + 2; 
 
         fallingStar.style.left = `${x}%`;
