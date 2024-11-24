@@ -1,4 +1,3 @@
-// apiService.js
 const apiKey = '1Xg2FffmZHikbXqgFi5e1eG3F42Q7QBvnOHk6Udd';
 
 export async function fetchData(date) {
