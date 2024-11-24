@@ -12,8 +12,7 @@ This repository hosts the source code for the **Space Exploration** website, a m
 
 ## Live Website
 
-You can view the live version of the website here:  
-[Space Exploration Website](https://shrivatsa-sharan-garg.github.io/Space-exploration-A-multimedia-rich-website/)
+You can view the live version of the website here: [Space Exploration Website](https://shrivatsa-sharan-garg.github.io/Space-exploration-A-multimedia-rich-website/)
 
 ## APIs Used
 
