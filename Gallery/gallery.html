@@ -4,139 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
-    <style>
-        /* General Styles */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-            background: radial-gradient(circle, #e2b0ff, #8a2be2 80%, #4b0082);
-            color: #f0f0f0;
-            overflow-x: hidden;
-        }
-
-        /* Header */
-        header {
-            text-align: center;
-            padding: 40px 20px;
-            background: linear-gradient(135deg, #ff69b4, #ff1493);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            color: #ffffff;
-            text-shadow: 0 0 5px #ffffff, 0 0 10px #ff1493;
-            margin: 0;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            margin-top: 10px;
-            color: #e8c7ff;
-        }
-
-        /* Navigation */
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
-            background: #3c3b6e;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
-        }
-
-        nav a {
-            text-decoration: none;
-            font-size: 1.1rem;
-            color: #f0f0f0;
-            padding: 10px 15px;
-            background: linear-gradient(145deg, #6829c2, #8a2be2);
-            border: 1px solid #4b0082;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-        }
-
-        nav a:hover {
-            color: #fff;
-            background: linear-gradient(145deg, #8a2be2, #6829c2);
-            box-shadow: 0 0 10px rgba(255, 105, 180, 0.7);
-            transform: translateY(-0.7rem);
-        }
-
-        /* Content Section */
-        section {
-            padding: 40px 20px;
-            margin: 20px auto;
-            max-width: 800px;
-            background: rgba(20, 20, 60, 0.9);
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
-            text-align: center;
-        }
-
-        section h2 {
-            font-size: 2rem;
-            color: #ff69b4;
-            margin-bottom: 20px;
-        }
-
-        section p {
-            color: #e8c7ff;
-        }
-
-        /* Star Animation */
-        #star-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            z-index: -1;
-        }
-
-        .star {
-            position: absolute;
-            width: 2px;
-            height: 2px;
-            background: #fff;
-            border-radius: 50%;
-            animation: starAnimation 10s linear infinite;
-        }
-
-        @keyframes starAnimation {
-            from {
-                transform: translateY(0);
-            }
-            to {
-                transform: translateY(100vh);
-            }
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: linear-gradient(135deg, #3c3b6e, #4b0082);
-            color: #ffffff;
-            font-size: 0.9rem;
-            border-top: 1px solid #6829c2;
-        }
-
-        footer p {
-            margin: 5px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="./gallery.css">
 </head>
 <body>
-    <!-- Star Container -->
     <div id="star-container"></div>
 
-    <!-- Navbar -->
     <nav>
         <a href="../index.html">🏠</a>
         <a href="../universe/universe.html">The Universe</a>
@@ -155,22 +27,6 @@
         <p>Space Exploration Gallery © 2024</p>
     </footer>
 
-    <script>
-        function createStars(count) {
-            const background = document.querySelector('#star-container');
-            for (let i = 0; i < count; i++) {
-                const star = document.createElement('div');
-                star.classList.add('star');
-                star.style.left = `${Math.random() * 100}vw`;
-                star.style.top = `${Math.random() * 100}vh`;
-                star.style.width = `${Math.random() * 4 + 2}px`; 
-                star.style.height = star.style.width; 
-                star.style.animationDuration = `${Math.random() * 10 + 5}s`;
-                background.appendChild(star);
-            }
-        }
-
-        createStars(100); 
-    </script>
+    <script src="./gallery.js"></script>
 </body>
 </html>

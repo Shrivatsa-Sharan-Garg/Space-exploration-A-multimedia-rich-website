@@ -66,15 +66,14 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    opacity: 0;
-    /* Initially hidden */
-    transition: opacity 0.8s ease;
-    /* Smooth transition for visibility */
+    opacity: 0.5;
+    filter: blur(5px);
+    transition: opacity 0.8s ease, filter 0.8s ease;
 }
 
 section.visible {
     opacity: 1;
-    /* Visible when scrolled into view */
+    filter: blur(0);
 }
 
 section h2 {
@@ -139,17 +138,6 @@ footer {
 
 footer p {
     margin: 5px 0;
-}
-
-.hidden {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.visible {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 @keyframes appear {
