@@ -1,6 +1,6 @@
 const API_KEY = "bY6Q-_0I7DhfBJo9-h7b0TwzKCDQKBAF1h_Q_w-rjAk";
 const QUERY = "Space";  
-const NO = 24;
+const NO = 27;
 
 function fetchImages() {
     const url = `https://api.unsplash.com/search/photos?client_id=${API_KEY}&query=${QUERY}&per_page=${NO}`;
