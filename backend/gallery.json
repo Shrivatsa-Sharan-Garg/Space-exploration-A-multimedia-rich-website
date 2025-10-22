@@ -1,0 +1,16 @@
+{
+    "images": [
+        {
+        "url": "https://example.com/image1.jpg",
+        "caption": "A stunning view of the Milky Way galaxy."
+        },
+        {
+        "url": "https://example.com/image2.jpg",
+        "caption": "The surface of Mars captured by a rover."
+        },
+        {
+        "url": "https://example.com/image3.jpg",
+        "caption": "A beautiful nebula in deep space."
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "facts":[
+    {
+        "id": 1,
+        "Title": "Interesting Facts About Space",
+        "img":"./assets/space_facts.jpeg",
+        "fact": "Space is completely silent because there is no atmosphere to carry sound waves."
+    },
+    {
+        "id": 2,
+        "Title": "Interesting Facts About Space",
+        "img":"./assets/space_facts.jpeg",
+        "fact": "Space is completely silent because there is no atmosphere to carry sound waves."
+    },
+    {
+        "id": 3,
+        "Title": "Interesting Facts About Space",
+        "img":"./assets/space_facts.jpeg",
+        "fact": "Space is completely silent because there is no atmosphere to carry sound waves."
+    }    
+]}
