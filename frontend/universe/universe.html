@@ -5,7 +5,169 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facts</title>
     <link rel="icon" href="./assets/Logo.jpg" type="image/icon jpg">
-    <link rel="stylesheet" href="./universe.css">
+    <!-- <link rel="stylesheet" href="./universe.css"> -->
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Verdana', sans-serif;
+    background: radial-gradient(circle at center, #0d1b2a, #1b263b, #415a77, #1b263b);
+    color: #ffffff;
+    overflow-y: auto; 
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; 
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: #fff;
+    border-radius: 50%;
+    animation: starAnimation 10s linear infinite;
+}
+
+.content {
+    position: relative;
+    z-index: 1; 
+    padding: 20px;
+}
+
+a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 1.5rem;
+    position: relative;
+    background: rgba(255, 204, 0, 0.2);
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00;
+    transition: transform 0.3s ease;
+    animation: glow 1.5s ease-in-out infinite;
+}
+
+a:hover {
+    transform: scale(1.2);
+}
+
+h1 {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 2.5rem;
+    text-shadow: 0 0 20px #ffcc00, 0 0 40px #ffffff;
+    color: #ffcc00;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    margin: -10px 0 50px; 
+}
+
+.Universe {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image-container {
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid #ffcc00;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #ffcc00, 0 0 30px #ffffff;
+    text-align: center;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.image-container:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ffcc00, 0 0 40px #ffffff;
+}
+
+.section-title {
+    margin: 0;
+    padding: 15px 10px;
+    font-size: 1.5rem;
+    background: linear-gradient(to right, #ffcc00, #ffffff);
+    color: #000;
+    font-weight: bold;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ffcc00;
+}
+
+.image-container p {
+    padding: 10px;
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00;
+    }
+    50% {
+        box-shadow: 0 0 20px #ffcc00, 0 0 40px #ffcc00;
+    }
+}
+
+@keyframes starAnimation {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    section {
+        max-width: 90%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+        padding: 8px 10px;
+    }
+}
+    </style>
 </head>
 <body>
     <div class="background"></div>
@@ -23,6 +185,72 @@
         <div class="Universe"></div>
     </div>
 
-    <script type="module" src="./universe.js"></script>
+    <script type="module">
+    fetch('http://127.0.0.1:8000/universe')
+
+            async function displaySpaceData(date, sectionId) {
+                try {
+                    const data = await fetchData(date, sectionId);
+                    showDataOnUI(data, sectionId);
+                } catch (error) {
+                    console.error('Error displaying data:', error);
+                }
+            }
+
+            function showDataOnUI(data, sectionId) {
+                const factsContainer = document.querySelector('.Universe');
+                const imgContainer = document.createElement("div");
+                imgContainer.classList.add("image-container");
+
+                const title = document.createElement("h2");
+                title.classList.add("section-title");
+                title.textContent = sectionId.charAt(0).toUpperCase() + sectionId.slice(1);
+
+                const img = document.createElement("img");
+                img.src = data.hdurl || data.url;
+                img.alt = data.title;
+
+                const caption = document.createElement("p");
+                caption.textContent = data.explanation;
+
+                imgContainer.appendChild(title);
+                imgContainer.appendChild(img);
+                imgContainer.appendChild(caption);
+                factsContainer.appendChild(imgContainer);
+            }
+
+            const dates = {
+                'LDN 1471': '2024-11-17',
+                'NGC 281': '2024-11-18',
+                'M106': '2024-10-09',
+                'Intergalactic skyscape': '2024-11-07',
+                'Comet Tsuchinshan-Atlas': '2024-11-06',
+                Mars: '2024-11-10',
+                Saturn: '2024-11-02',
+                Jupiter: '2024-11-03',
+                'Milky Way Galaxy': '2024-11-08',
+                Neptune: '2024-11-09',
+                'Moon': '2024-11-15',
+                'Pluto': '2024-11-16',
+            };
+
+            Object.entries(dates).forEach(([sectionId, date]) => displaySpaceData(date, sectionId));
+
+            function createStars(count) {
+                const background = document.querySelector('.background');
+                for (let i = 0; i < count; i++) {
+                    const star = document.createElement('div');
+                    star.classList.add('star');
+                    star.style.left = `${Math.random() * 100}vw`;
+                    star.style.top = `${Math.random() * 100}vh`;
+                    star.style.width = `${Math.random() * 3 + 2}px`;
+                    star.style.height = star.style.width;
+                    star.style.animationDuration = `${Math.random() * 10 + 5}s`;
+                    background.appendChild(star);
+                }
+            }
+
+            createStars(100); 
+    </script>
 </body>
 </html>

@@ -1,75 +1,93 @@
 {
     "facts":[
         {
-            "img":"../assets/facts/HAT-P-7b.png",
+            "name":"HAT-P-7b",
+            "img":"https://images.fineartamerica.com/images-medium-large-5/extrasolar-planet-hat-p-7b-mark-garlickscience-photo-library.jpg",
             "fact":"Scientists have discovered a Jupiter-like planet named HAT-P-7b where it rains rubies and sapphires. It is located 1000 light-years from Earth."
         },
         {
-            "img":"../assets/facts/venus.png",
+            "name":"Venus Day Length",
+            "img":"https://tse2.mm.bing.net/th/id/OIP.Y8KiQv3_aJXyg_vipe3ysAHaFj?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
             "fact":"A single day on Venus takes 243 Earth days to complete, which is longer than its entire year of 225 Earth days."
         },
         {
-            "img":"../assets/facts/sun.png",
+            "name":"The Sun",
+            "img":"https://cdn.mos.cms.futurecdn.net/mdJvrugN4PvMNtBF6bVUNL-1200-80.jpg",
             "fact":"The Sun makes up 99.86% of the mass of our solar system, and its core temperature reaches around 15 million °C."
         },
         {
-            "img":"../assets/facts/collision.png",
+            "name":"Collision of Galaxies",
+            "img":"https://mymodernmet.com/wp/wp-content/uploads/2022/05/andromeda-milky-way-collision-1.jpeg",
             "fact":"The Andromeda Galaxy contains over a trillion stars and is on a collision course with the Milky Way in about 4.5 billion years."
         },
         {
-            "img":"../assets/facts/supernova.png",
+            "name":"Supernova",
+            "img":"https://th.bing.com/th/id/R.6bbcca5cdbaf0a78559b5dcace0dfc68?rik=VX0%2bghmCDSALFg&riu=http%3a%2f%2fcdn.techgyd.com%2fcassiopeia-supernova-wallpaper.jpg&ehk=wcTsV0IjQrgKs2CVgFWCRfRcynsrnZOu5cZceTqx%2fW4%3d&risl=&pid=ImgRaw&r=0",
             "fact":"A supernova is a massive stellar explosion that can outshine entire galaxies for weeks."
         },
         {
-            "img":"../assets/facts/BlackHole.png",
+            "name":"Black Hole",
+            "img":"https://stsci-opo.org/STScI-01FMN2YRHJ7YSPYASRFRKYSMKM.jpg",
             "fact":"Black holes are regions with gravity so strong that not even light can escape. Supermassive black holes can be billions of times the Sun's mass."
         },
         {
-            "img":"../assets/facts/Quasars.png",
+            "name":"Quasars",
+            "img":"https://th.bing.com/th/id/R.7d3063e9b7ccd646c1a8d242e2ef66ef?rik=J4wvSdwit4LsTA&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2016%2f01%2f20143-quasars-space.jpg&ehk=YYpiy6M99MZGu2KbjnkZrNhi4v0iqwcZyVY4%2b1a4MEw%3d&risl=&pid=ImgRaw&r=0",
             "fact":"Quasars are extremely luminous active galactic nuclei powered by supermassive black holes."
         },
         {
-            "img":"../assets/facts/NeutronStars.png",
+            "name":"Neutron Stars",
+            "img":"https://tse3.mm.bing.net/th/id/OIP.aLB4F7gfHkqW5LEuucDLOgHaIc?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
             "fact":"Neutron stars are incredibly dense remnants of supernovae. A teaspoon of neutron star matter weighs about a billion tons."
         },
         {
-            "img":"../assets/facts/kilonova.png",
+            "name":"Kilonova",
+            "img":"https://tse2.mm.bing.net/th/id/OIP.D3aqS1RcojL-yTXKHTP-XQHaEK?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
             "fact":"A kilonova occurs when two neutron stars collide, producing heavy elements like gold and platinum and emitting gravitational waves."
         },
         {
-            "img":"../assets/facts/grb.png",
+            "name":"Gamma-Ray Bursts",
+            "img":"https://tse1.mm.bing.net/th/id/OIP.C7P7t5gmdxWe0aU2HqcdTQHaDt?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
             "fact":"Gamma-ray bursts (GRBs) are brief but extremely energetic flashes from stellar explosions or neutron star mergers."
         },
         {
-            "img":"../assets/facts/jupiter.png",
+            "name":"Jupiter",
+            "img":"https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2020/09/hubble_captures_crisp_new_image_of_jupiter_and_europa/22212206-1-eng-GB/Hubble_Captures_Crisp_New_Image_of_Jupiter_and_Europa_pillars.jpg",
             "fact":"Jupiter is so massive it could fit all other planets inside it. Its moon Europa may have a subsurface ocean."
         },
         {
-            "img":"../assets/facts/Saturn.png",
+            "name":"Saturn",
+            "img":"https://research2reality.com/wp-content/uploads/2023/07/pexels-zch-12498805.jpg",
             "fact":"Saturn’s rings span hundreds of thousands of kilometers but are only about 10 meters thick in some parts."
         },
         {
-            "img":"../assets/facts/MilkyWay.png",
+            "name":"No. of stars in Milky Way",
+            "img":"https://tse3.mm.bing.net/th/id/OIP.-AA6w6LaRwujECAqw38FGAHaEK?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
             "fact":"Our Milky Way galaxy contains around 100–400 billion stars. The solar system orbits its center at roughly 828,000 km/h."
         },
         {
-            "img":"../assets/facts/Nebulae.png",
-            "fact":"Nebulae are clouds of gas and dust where new stars are born, like the Orion Nebula."
+            "name":"Nebula",
+            "img":"https://tse3.mm.bing.net/th/id/OIP.dpGNT4I9UCy3GujqXSwOAAHaFL?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
+            "fact":"Nebula are clouds of gas and dust where new stars are born, like the Orion Nebula."
         },
         {
-            "img":"../assets/facts/Pluto.png",
+            "name":"Pluto",
+            "img":"https://assets.science.nasa.gov/dynamicimage/assets/science/psd/solar/2023/09/n/nh-pluto-in-false-color.jpg?w=2560&format=jpeg&fit=clip&crop=faces%2Cfocalpoint",
             "fact":"Pluto is a dwarf planet with a heart-shaped glacier region called Sputnik Planitia."
         },
         {
-            "img":"../assets/facts/RealBlackHole.png",
+            "name":"Real Black Hole Image",
+            "img":"https://i.redd.it/dyq7u8w87gr21.jpg",
             "fact":"The first-ever image of a black hole, captured in 2019, showed the event horizon of the black hole in galaxy M87."
         },
         {
-            "img":"../assets/facts/Exoplanet.png",
+            "name":"Exoplanets",
+            "img":"https://tse1.mm.bing.net/th/id/OIP.spGl7cOD5n3HhmCSlGPkhQHaEK?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
             "fact":"Exoplanets orbit stars beyond our solar system. Some are rocky and within the habitable zone."
         },
         {
-            "img":"../assets/facts/Aurora.png",
+            "name":"Auroras",
+            "img":"https://img.freepik.com/premium-photo/spectacular-display-northern-lights_634190-3133.jpg",
             "fact":"Auroras occur when charged particles from the Sun interact with Earth's magnetic field, creating spectacular lights near the poles."
         }
     ]

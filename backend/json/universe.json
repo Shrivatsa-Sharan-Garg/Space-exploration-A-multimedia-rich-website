@@ -1,0 +1,24 @@
+{
+    "universe":[
+        {
+            "name":"Death Star Galaxy",
+            "img":"https://mumbaimirror.indiatimes.com/photo/15768089.cms",
+            "fact":"Scientists have named a galaxy, "Death Star Galaxy" because it is shooting an energetic blast of energy from its super massive black hole at its companion galaxy & thereby destroying it."
+        },
+        {
+            "name":"Weight of Neutron Star Matter",
+            "img":"https://th.bing.com/th/id/OIP.2gh5nHnJrTXoTT8U3v7EXgHaHa?w=169&h=180&c=7&r=0&o=7&cb=12&dpr=1.3&pid=1.7&rm=3",
+            "fact":"A teaspoon of matter taken from a neutron star would weight around 10 billion tons, which is similar to the weight of an average mountain on earth."
+        },
+        {
+            "name":"The Boomerang Nebula",
+            "img":"https://tse1.mm.bing.net/th/id/OIP.3Y-2VOb0Y6YlzEi0kPDsjwHaG3?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
+            "fact":"The coldest known natural place in the universe is the Boomerang Nebula. At -272.15°C it is 1°C warmer than absolute zero, and 2°C colder than background radiation from the Big Bang."
+        },
+        {
+            "name":"The Largest Black Hole",
+            "img":"https://tse3.mm.bing.net/th/id/OIP.zEjhCG5T97Y4m_hZjNJ37QHaFY?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
+            "fact":"The Largest known black hole (Holmberg 15A) has a diameter of 1 trillion km, more than 190 times the distance from the Sun to Pluto."
+        }
+    ]
+}

@@ -48,4 +48,4 @@ async def get_all_space_facts() -> Dict[str, Any]:
 
 @app_router.get("/gallery")
 async def get_all_space_facts() -> Dict[str, Any]:
-    return load_json_data("gallery.json")
+    return load_json_data("universe.json")

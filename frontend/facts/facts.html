@@ -1,12 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facts</title>
     <link rel="icon" href="./assets/Logo.jpg" type="image/icon jpg">
-    <link rel="stylesheet" href="./facts.css">
+    <style>
+        /* Corrected typo: <stlye> changed to <style> */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background: radial-gradient(circle at center, #000020, #000010 80%, #000000);
+            color: #e0e0e0;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: #fff;
+            border-radius: 50%;
+            animation: starAnimation 10s linear infinite;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/stardust.png');
+            opacity: 0.2;
+            z-index: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            background: rgba(0, 0, 50, 0.9);
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 1.2rem;
+            padding: 8px 15px;
+            background: linear-gradient(135deg, #ff5733, #c70039);
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        nav a:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(255, 87, 51, 0.7);
+        }
+
+        h1 {
+            margin-top: 6rem;
+            text-align: center;
+            font-size: 3rem;
+            color: #ffdd00;
+            text-shadow: 0 0 20px #ffcc00, 0 0 40px #ffffff;
+            z-index: 1;
+        }
+
+        .Facts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            padding: 40px 20px;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .image-container {
+            background: linear-gradient(145deg, #1e2030, #2c2f50);
+            border: 1px solid #3c3f60;
+            border-radius: 20px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+            transform: translateY(0);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .image-container:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3), 0 0 30px rgba(0, 128, 255, 0.4);
+        }
+
+        .section-title {
+            margin: 0;
+            padding: 15px;
+            font-size: 1.5rem;
+            color: #00d4ff;
+            background: rgba(0, 0, 50, 0.7);
+            border-bottom: 1px solid #00d4ff;
+            text-shadow: 0 0 3px #00d4ff, 0 0 2px #ffffff;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-bottom: 1px solid transparent;
+            filter: brightness(0.9);
+            transition: filter 0.3s ease;
+        }
+
+        .image-container img:hover {
+            filter: brightness(1.1);
+        }
+
+        .image-container p {
+            padding: 15px;
+            font-size: 1rem;
+            color: #e0e0e0;
+            line-height: 1.6;
+            text-align: justify;
+            background: rgba(0, 0, 50, 0.8);
+            border-top: 1px solid #3c3f60;
+            box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-wrap: wrap;
+                padding: 15px;
+            }
+
+            nav a {
+                font-size: 0.9rem;
+                margin: 5px;
+            }
+
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            a {
+                font-size: 1.5rem;
+                padding: 8px;
+            }
+
+            .section-title {
+                font-size: 1.2rem;
+            }
+
+            .image-container {
+                width: 90%;
+            }
+        }
+
+        @keyframes starAnimation {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(100vh);
+            }
+        }
+    </style>
 </head>
+
 <body>
     <div class="background"></div>
     <nav>
@@ -18,8 +208,109 @@
         <a href="../contact us form/contact.html">Contact Us</a>
     </nav>
     <h1>Facts About Space</h1>
-    <div class="Facts"></div>
+    <div class="Facts">
+        <!-- Fact cards will be inserted here -->
+    </div>
 
-    <script type="module" src="./facts.js"></script>
+    <script type="module">
+        // Helper function to create star animation background
+        function createStars(count) {
+            const background = document.querySelector('.background');
+            for (let i = 0; i < count; i++) {
+                const star = document.createElement('div');
+                star.classList.add('star');
+                const x = Math.random() * 100;
+                const y = Math.random() * 100;
+                const animationDuration = Math.random() * 5 + 5;
+                const size = Math.random() * 2 + 1; // Smaller stars look better
+
+                star.style.left = `${x}%`;
+                star.style.top = `${y}%`;
+                star.style.width = `${size}px`;
+                star.style.height = `${size}px`;
+                star.style.animationDuration = `${animationDuration}s`;
+                star.style.animationDelay = `-${Math.random() * 10}s`; // Stagger animation start
+
+                background.appendChild(star);
+            }
+        }
+
+        /**
+         * Renders a single fact card onto the UI.
+         * It assumes the fact data has 'img' and 'fact' or 'description' fields.
+         * @param {object} factData - An object containing { name?, img, fact }.
+         * Note: 'name' is optional, for the card title.
+         */
+        function renderFactCard(factData) {
+            const factsContainer = document.querySelector('.Facts');
+            const imgContainer = document.createElement("div");
+            imgContainer.classList.add("image-container");
+
+            const title = document.createElement("h2");
+            title.classList.add("section-title");
+            // Use 'name' if available, otherwise default to a generic title.
+            title.textContent = factData.name || "Amazing Space Fact";
+
+            const img = document.createElement("img");
+            img.src = factData.img;
+            img.alt = factData.name || "Space Fact Image";
+            img.onerror = () => {
+                // Placeholder image on error
+                img.src = 'https://placehold.co/300x200/5C2D91/FFFFFF?text=Image+Missing';
+                console.error(`Failed to load image for: ${factData.name || 'a fact'}`);
+            };
+
+            const factText = document.createElement("p");
+            // Use 'fact' as per the provided JSON structure, or fallback to 'description'.
+            factText.textContent = factData.fact || factData.description || "No fact description available.";
+
+            imgContainer.appendChild(title);
+            imgContainer.appendChild(img);
+            imgContainer.appendChild(factText);
+            factsContainer.appendChild(imgContainer);
+        }
+
+        /**
+         * Fetches facts data from the local FastAPI endpoint and renders them.
+         */
+        async function fetchAndRenderFacts() {
+            const factsContainer = document.querySelector('.Facts');
+            const apiEndpoint = 'http://127.0.0.1:8000/facts';
+
+            try {
+                const response = await fetch(apiEndpoint);
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+
+                const data = await response.json();
+
+                // Expecting the structure { "facts": [ ... ] } based on your example
+                const factsArray = data.facts;
+
+                if (Array.isArray(factsArray) && factsArray.length > 0) {
+                    factsArray.forEach(renderFactCard);
+                } else {
+                    factsContainer.textContent = 'No facts found or API returned empty data.';
+                }
+
+            } catch (error) {
+                console.error('Error fetching or processing facts data:', error);
+                // Display error message to the user
+                factsContainer.innerHTML = `<p style="color: red; text-align: center; padding-top: 50px;">
+                    Failed to load facts. Check your FastAPI server at 
+                    <strong>${apiEndpoint}</strong> and ensure the server is running.
+                </p>`;
+            }
+        }
+
+        // --- Initialize on load ---
+        window.onload = () => {
+            fetchAndRenderFacts();
+            createStars(100);
+        };
+    </script>
 </body>
+
 </html>
