@@ -1,73 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planets</title>
+    <!-- Use Inter font from Google CDN to fix the missing .ttf error -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="./assets/Logo.jpg" type="image/icon jpg">
-    <link rel="stylesheet" href="./planets.css">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            /* Using Inter as the primary font */
+            font-family: 'Inter', 'Arial', sans-serif;
+            background: radial-gradient(circle, #000010, #00001a 80%, #000000);
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #1a1a3f, #2c2c5c);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #ffdd00;
+            text-shadow: 0 0 5px #ffdd00, 0 0 5px #ffffff;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: #b0b0b0;
+        }
+
+        /* Navigation Styles */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            background: #121232;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        nav a {
+            text-decoration: none;
+            font-size: 1.1rem;
+            color: #ffffff;
+            padding: 10px 15px;
+            background: linear-gradient(145deg, #0a0a3f, #1a1a5f);
+            border: 1px solid #303060;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #00e5ff;
+            background: linear-gradient(145deg, #1a1a5f, #0a0a3f);
+            box-shadow: 0 0 10px rgba(0, 229, 255, 0.7);
+        }
+
+        /* Section/Container Styles */
+        section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 94%;
+            background: rgba(10, 10, 40, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            /* Removed initial blur/opacity to ensure visibility on load */
+            opacity: 1;
+            filter: none;
+            transition: none;
+            /* Removed transition for simplicity/debugging */
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: #ff8000;
+            text-align: center;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        section p {
+            text-align: justify;
+            color: #b0b0b0;
+            width: 100%;
+        }
+
+        /* Planet Card Styles */
+        .planet-card {
+            padding: 20px;
+            margin: 10px;
+            background: rgba(20, 20, 60, 0.8);
+            border: 1px solid #3c3f60;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: all 0.5s ease;
+            flex: 1 1 calc(30% - 20px);
+            box-sizing: border-box;
+
+            /* Initial hidden state for dynamic loading */
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .planet-card.loaded {
+            /* Final visible state */
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .planet-card:hover {
+            transform: scale(1.05);
+        }
+
+        .planet-card img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+            border: 2px solid #ffdd00;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 221, 0, 0.7);
+        }
+
+        article h3 {
+            font-size: 1.5rem;
+            color: #00e5ff;
+            margin-bottom: 10px;
+        }
+
+        article p {
+            font-size: 1rem;
+            color: #d0d0d0;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #1a1a3f, #2c2c5c);
+            color: #ffffff;
+            font-size: 0.9rem;
+            border-top: 1px solid #303060;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            nav {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            section {
+                max-width: 90%;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            nav a {
+                font-size: 1rem;
+                padding: 8px 10px;
+            }
+
+            .planet-card {
+                flex: 1 1 100%;
+                /* Make cards full width on mobile */
+            }
+        }
+    </style>
 </head>
+
 <body>
     <nav>
         <a href="../index.html">🏠</a>
         <a href="../universe/universe.html">The Universe</a>
-        <a href="#">Planets</a>
+        <a href="#" style="color: #00e5ff;">Planets</a> <!-- Highlight active link -->
         <a href="../facts/facts.html">Facts</a>
+        <!-- Corrected typo: 'galary' changed to 'gallery' -->
         <a href="../gallery/gallery.html">Gallery</a>
-        <a href="../contact us form/contact.html">Contact us</a>
+        <a href="../contact_form_client.html">Contact us</a>
     </nav>
-    
+
+    <header>
+        <h1>Our Solar System's Planets</h1>
+        <p>A dynamically loaded catalog of the major bodies orbiting our Sun.</p>
+    </header>
+
     <section id="planets">
         <h2 align="Center">Planets</h2>
-        <p>What is a planet? Well, its official definition is "a very large round object in space that moves around the sun or another star". A more modern definition is "any of the large bodies that revolve around the Sun in the solar system." Here is a list of the planets in our own solar system with their description if you want to learn more about it!</p>
+        <p>What is a planet? Well, its official definition is "a very large round object in space that moves around the
+            sun or another star". A more modern definition is "any of the large bodies that revolve around the Sun in
+            the solar system." Here is a list of the planets in our own solar system with their description, dynamically
+            loaded from our server!</p>
 
-        <article class="planet-card" id="mercury">
-            <h3>Mercury</h3>
-            <img src="../assets/Mercury.jpeg" alt="Mercury">
-            <p>Mercury is the closest planet to the Sun and the smallest in the solar system. It has no atmosphere and experiences extreme temperature variations, from blistering heat during the day to freezing cold at night. This stark environment makes it one of the most fascinating planets to study.</p>
-        </article>
-
-        <article class="planet-card" id="venus">
-            <h3>Venus</h3>
-            <img src="../assets/Venus.jpeg" alt="Venus">
-            <p>Venus is similar in size to Earth but has a thick, toxic atmosphere that traps heat, making it the hottest planet in our solar system. Its surface is covered with volcanoes and has crushing atmospheric pressure. Scientists often refer to it as Earth's "evil twin."</p>
-        </article>
-
-        <article class="planet-card" id="earth">
-            <h3>Earth</h3>
-            <img src="../assets/Earth.jpeg" alt="Earth">
-            <p>Earth is the only planet known to support life. It has a diverse environment, oceans, and a protective atmosphere that makes life possible. The Earth's magnetic field protects it from harmful solar radiation, making it uniquely habitable in the cosmos.</p>
-        </article>
-
-        <article class="planet-card" id="mars">
-            <h3>Mars</h3>
-            <img src="../assets/Mars.jpeg" alt="Mars">
-            <p>Mars, known as the Red Planet, has a thin atmosphere and is home to the largest volcano and canyon in the solar system. Scientists are investigating whether it could have supported life in the past, and it is a prime candidate for future human colonization.</p>
-        </article>
-
-        <article class="planet-card" id="jupiter">
-            <h3>Jupiter</h3>
-            <img src="../assets/Jupiter.jpeg" alt="Jupiter">
-            <p>Jupiter is the largest planet, a gas giant known for its Great Red Spot, a giant storm, and its many moons. Its strong magnetic field and radiation belts make it a challenging but exciting target for exploration.</p>
-        </article>
-
-        <article class="planet-card" id="saturn">
-            <h3>Saturn</h3>
-            <img src="../assets/Saturn.jpeg" alt="Saturn">
-            <p>Saturn is famous for its spectacular ring system and is another gas giant, mostly made up of hydrogen and helium. Its moons, like Titan and Enceladus, are of great interest to scientists due to their potential for supporting life.</p>
-        </article>
-
-        <article class="planet-card" id="uranus">
-            <h3>Uranus</h3>
-            <img src="../assets/Uranus.jpeg" alt="Uranus">
-            <p>Uranus has a unique rotation, rolling on its side as it orbits the Sun. It has a faint ring system and is known for its icy composition. The planet's bluish color comes from methane in its atmosphere.</p>
-        </article>
-
-        <article class="planet-card" id="neptune">
-            <h3>Neptune</h3>
-            <img src="../assets/Neptune.jpeg" alt="Neptune">
-            <p>Neptune is the farthest planet from the Sun, known for its intense blue color and powerful winds. Its moon, Triton, has geysers that erupt icy material, making it a unique and intriguing celestial body.</p>
-        </article>
+        <!-- Dynamic content container and loading message -->
+        <p id="loading-message"
+            style="width: 100%; text-align: center; font-size: 1.2rem; margin-top: 30px; color: #ffdd00;">
+            Loading planet data from the backend...
+        </p>
     </section>
 
     <footer>
@@ -75,6 +232,106 @@
         <p>Sources: NASA, ISRO, ViewSpace</p>
     </footer>
 
-    <script src="./planets.js"></script>
+    <script>
+        // NOTE: The API URL is still hardcoded to http://127.0.0.1:8000/planets.
+        // Ensure your FastAPI server is running with 'python -m uvicorn main:app --reload'
+        const PLANETS_API_URL = 'http://127.0.0.1:8000/planets';
+        const container = document.getElementById('planets');
+        const loadingMessage = document.getElementById('loading-message');
+
+        /**
+         * Renders the dynamic HTML for a single planet card.
+         * @param {Object} planet - The planet object from the API.
+         */
+        function createPlanetCard(planet) {
+            const article = document.createElement('article');
+            article.className = 'planet-card'; // Uses classes from the custom CSS
+            // Ensure name is safe for ID
+            article.id = planet.name.toLowerCase().replace(/\s+/g, '-');
+
+            // Create Title Element
+            const h3 = document.createElement('h3');
+            h3.textContent = planet.name;
+
+            // Create Image Element
+            const img = document.createElement('img');
+            // Using the img path from the API, or a placeholder if missing
+            img.src = planet.img || `https://placehold.co/400x300/1a1a5f/00e5ff?text=${planet.name}`;
+            img.alt = `Image of ${planet.name}`;
+            // Optional: Add a fallback for broken image URLs
+            img.onerror = () => {
+                img.src = `https://placehold.co/400x300/601e3e/ffffff?text=Image+Failed`;
+            };
+
+            // Create Description Element
+            const p = document.createElement('p');
+            p.textContent = planet.description;
+
+            // Append all elements
+            article.appendChild(h3);
+            article.appendChild(img);
+            article.appendChild(p);
+
+            return article;
+        }
+
+        /**
+         * Fetches data from the backend and renders the planet cards.
+         */
+        async function fetchAndRenderPlanets() {
+            try {
+                const response = await fetch(PLANETS_API_URL);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status} ${response.statusText}`);
+                }
+                const data = await response.json();
+
+                // --- CRITICAL FIX: Handle different API return structures ---
+                let planetsArray = [];
+                if (Array.isArray(data)) {
+                    // Scenario A: Backend returned the array directly (e.g., [{}, {}])
+                    planetsArray = data;
+                } else if (data && Array.isArray(data.planets)) {
+                    // Scenario B: Backend returned the array nested under 'planets' (e.g., {planets: [{}, {}]})
+                    planetsArray = data.planets;
+                }
+                // -----------------------------------------------------------
+
+                // Remove the loading message
+                if (loadingMessage && loadingMessage.parentNode) {
+                    loadingMessage.parentNode.removeChild(loadingMessage);
+                }
+
+                if (planetsArray.length > 0) {
+                    planetsArray.forEach((planet, index) => {
+                        const card = createPlanetCard(planet);
+                        container.appendChild(card);
+
+                        // Staggered fade-in effect 
+                        setTimeout(() => {
+                            card.classList.add('loaded');
+                        }, 100 * index);
+                    });
+                } else {
+                    // Display error if data is empty or malformed
+                    container.innerHTML += `<p style="color: #ff0000; width: 100%; text-align: center; margin-top: 30px;">
+                        Error: No planet data received or data structure is incorrect.
+                    </p>`;
+                }
+            } catch (error) {
+                console.error('Error fetching or processing planets data:', error);
+                if (loadingMessage && loadingMessage.parentNode) {
+                    loadingMessage.parentNode.removeChild(loadingMessage);
+                }
+                container.innerHTML += `<p style="color: #ff0000; width: 100%; text-align: center; margin-top: 30px;">
+                    Failed to load planet data from ${PLANETS_API_URL}. Check your backend server and console for details.
+                </p>`;
+            }
+        }
+
+        // Start fetching data when the window loads
+        window.onload = fetchAndRenderPlanets;
+    </script>
 </body>
+
 </html>
