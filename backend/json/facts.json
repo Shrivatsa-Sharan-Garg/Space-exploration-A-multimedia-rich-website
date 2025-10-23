@@ -1,18 +1,224 @@
 {
     "facts":[
         {
-            "id": 1,
-            "img":"../assets/facts/fact.png",
-            "fact": "Scientists have discovered a Jupiter-like planet which they hvae name HAT-P-7b where it rains rubies and sapphires. It is located 1000 light years from Earth."
+            "img":"../assets/facts/placeholder.png",
+            "fact":"Scientists have discovered a Jupiter-like planet named HAT-P-7b where it rains rubies and sapphires. It is located 1000 light-years from Earth."
         },
         {
-            "id": 2,
-            "img": "../assets/facts/venus.png",
-            "fact": "A single day on Venus takes 243 Earth days to complete, which is actually longer than its entire year (225 Earth days). Furthermore, Venus rotates backward relative to most other planets."
+            "img":"../assets/facts/placeholder.png",
+            "fact":"A single day on Venus takes 243 Earth days to complete, which is longer than its entire year of 225 Earth days."
         },
         {
-            "id": 3,
-            "img": "",
-            "fact": ""
+            "img":"../assets/facts/placeholder.png",
+            "fact":"The Sun makes up 99.86% of the mass of our solar system, and its core temperature reaches around 15 million °C."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"The Andromeda Galaxy contains over a trillion stars and is on a collision course with the Milky Way in about 4.5 billion years."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"A supernova is a massive stellar explosion that can outshine entire galaxies for weeks."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"Black holes are regions with gravity so strong that not even light can escape. Supermassive black holes can be billions of times the Sun's mass."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"Quasars are extremely luminous active galactic nuclei powered by supermassive black holes."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"Neutron stars are incredibly dense remnants of supernovae. A teaspoon of neutron star matter weighs about a billion tons."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"A kilonova occurs when two neutron stars collide, producing heavy elements like gold and platinum and emitting gravitational waves."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"Gamma-ray bursts (GRBs) are brief but extremely energetic flashes from stellar explosions or neutron star mergers."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"Jupiter is so massive it could fit all other planets inside it. Its moon Europa may have a subsurface ocean."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"Saturn’s rings span hundreds of thousands of kilometers but are only about 10 meters thick in some parts."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"Our Milky Way galaxy contains around 100–400 billion stars. The solar system orbits its center at roughly 828,000 km/h."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"Nebulae are clouds of gas and dust where new stars are born, like the Orion Nebula."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"Pluto is a dwarf planet with a heart-shaped glacier region called Sputnik Planitia."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"The first-ever image of a black hole, captured in 2019, showed the event horizon of the black hole in galaxy M87."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"Exoplanets orbit stars beyond our solar system. Some are rocky and within the habitable zone."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"Auroras occur when charged particles from the Sun interact with Earth's magnetic field, creating spectacular lights near the poles."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"Mercury has almost no atmosphere and experiences extreme temperature variations, from -173°C at night to 427°C during the day."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"Mars has the tallest volcano in the solar system, Olympus Mons, standing 22 km high."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"Comets are icy bodies that release gas and dust, forming glowing tails when near the Sun."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"The asteroid belt between Mars and Jupiter contains millions of rocky objects, remnants of the early solar system."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"Titan, Saturn’s largest moon, has a dense atmosphere and lakes of liquid methane and ethane."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"Enceladus, a moon of Saturn, ejects water-ice geysers that may indicate a subsurface ocean."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"Uranus rotates on its side, likely due to a massive collision in its past."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"Neptune’s winds are the fastest in the solar system, reaching up to 2,100 km/h."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"The largest volcano on Earth, Mauna Loa in Hawaii, is still active and covers half of the Big Island."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"The Crab Nebula is the remnant of a supernova observed in 1054 AD."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"Sagittarius A* is the supermassive black hole at the center of the Milky Way."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"The Hubble Space Telescope has captured images of galaxies billions of light-years away."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"The Oort Cloud is a theoretical cloud of icy objects at the edge of the solar system, source of long-period comets."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"The Sun’s corona, visible during a total solar eclipse, is hotter than its surface."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"Binary star systems are common; two stars orbiting a common center of mass."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"The Voyager 1 spacecraft, launched in 1977, is the farthest human-made object from Earth."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"Dark matter makes up about 27% of the universe, but it does not emit light or energy."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"Dark energy, about 68% of the universe, is driving the accelerated expansion of the cosmos."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"The first gravitational waves were detected in 2015 from colliding black holes, confirming Einstein’s prediction."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"Cepheid variable stars pulsate at regular intervals and are used to measure cosmic distances."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"The Moon is slowly drifting away from Earth at about 3.8 cm per year."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"Solar flares are bursts of radiation from the Sun that can affect satellites and power grids on Earth."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"The James Webb Space Telescope can see farther into the universe than Hubble, observing early galaxies."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"The Milky Way and Andromeda galaxies are part of the Local Group of galaxies."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"Pulsars are rapidly rotating neutron stars emitting beams of electromagnetic radiation."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"White dwarfs are the remnants of medium-sized stars, slowly cooling over billions of years."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"Rogue planets float through space without orbiting any star."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"The Eagle Nebula’s 'Pillars of Creation' are iconic star-forming regions photographed by Hubble."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"The largest known galaxy, IC 1101, is about 6 million light-years across."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"Some stars, called hypergiants, are over 100 times the mass of the Sun and millions of times more luminous."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"Meteor showers occur when Earth passes through debris left by comets."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"Earth’s magnetic field protects life from harmful solar and cosmic radiation."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"The Sun will eventually become a red giant in about 5 billion years, engulfing the inner planets."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"Gamma-ray bursts from distant galaxies can release more energy in a few seconds than the Sun will in its entire lifetime."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"Exoplanet Kepler-16b orbits two stars, similar to Tatooine from Star Wars."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"The moon Titan has clouds and rain of methane, creating rivers and lakes similar to Earth’s water cycle."
+        },
+        {
+            "img":"../assets/facts/placeholder.png",
+            "fact":"Some supernovae leave behind neutron stars or black holes depending on their mass."
         }
-]}
+    ]
+}
