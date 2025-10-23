@@ -1,16 +1,76 @@
 {
     "images": [
         {
-        "url": "https://example.com/image1.jpg",
-        "caption": "A stunning view of the Milky Way galaxy."
+        "url": "../assets/Gallery/P1.jpg"
         },
         {
-        "url": "https://example.com/image2.jpg",
-        "caption": "The surface of Mars captured by a rover."
+        "url": "../assets/Gallery/P2.jpg"
         },
         {
-        "url": "https://example.com/image3.jpg",
-        "caption": "A beautiful nebula in deep space."
+        "url": "../assets/Gallery/P3.jpg"
+        },
+        {
+        "url": "../assets/Gallery/P4.jpg"
+        },
+        {
+        "url": "../assets/Gallery/P5.jpg"
+        },
+        {
+        "url": "../assets/Gallery/P6.jpg"
+        },
+        {
+        "url": "../assets/Gallery/P7.jpg"
+        },
+        {
+        "url": "../assets/Gallery/P8.jpg"
+        },
+        {
+        "url": "../assets/Gallery/P9.jpg"
+        },
+        {
+        "url": "../assets/Gallery/P10.jpg"
+        },
+        {
+        "url": "../assets/Gallery/P11.jpg"
+        },
+        {
+        "url": "../assets/Gallery/P12.jpg"
+        },
+        {
+        "url": "../assets/Gallery/P13.jpg"
+        },
+        {
+        "url": "../assets/Gallery/P14.jpg"
+        },
+        {
+        "url": "../assets/Gallery/P15.jpg"
+        },
+        {
+        "url": "../assets/Gallery/P16.jpg"
+        },
+        {
+        "url": "../assets/Gallery/P17.jpg"
+        },
+        {
+        "url": "../assets/Gallery/P18.jpg"
+        },
+        {
+        "url": "../assets/Gallery/P19.jpg"
+        },
+        {
+        "url": "../assets/Gallery/P20.jpg"
+        },
+        {
+        "url": "../assets/Gallery/P21.jpg"
+        },
+        {
+        "url": "../assets/Gallery/P22.jpg"
+        },
+        {
+        "url": "../assets/Gallery/P23.jpg"
+        },
+        {
+        "url": "../assets/Gallery/P24.jpg"
         }
     ]
 }
