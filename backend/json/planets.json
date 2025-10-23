@@ -1,11 +1,11 @@
 {
   "planets":[
     {"name":"Mercury",
-     "img":"./assets/Mercury.jpeg",
+     "img":"../assets/planets/Mercury.jpeg",
      "description":"Mercury is the smallest planet in our solar system and closest to the Sun. It has a rocky surface covered with craters and experiences extreme temperature variations."
     },
     {"name":"Venus",
-     "img":"./assets/Venus.jpeg",
+     "img":"../assets/planets/Venus.jpeg",
      "description":"Venus is the second planet from the Sun and is known for its thick, toxic atmosphere that traps heat, making it the hottest planet in our solar system."
     }
   ]

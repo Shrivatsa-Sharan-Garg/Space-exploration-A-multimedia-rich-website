@@ -1,0 +1,18 @@
+{
+    "facts":[
+        {
+            "id": 1,
+            "img":"../assets/facts/fact.png",
+            "fact": "Scientists have discovered a Jupiter-like planet which they hvae name HAT-P-7b where it rains rubies and sapphires. It is located 1000 light years from Earth."
+        },
+        {
+            "id": 2,
+            "img": "../assets/facts/venus.png",
+            "fact": "A single day on Venus takes 243 Earth days to complete, which is actually longer than its entire year (225 Earth days). Furthermore, Venus rotates backward relative to most other planets."
+        },
+        {
+            "id": 3,
+            "img": "",
+            "fact": ""
+        }
+]}
