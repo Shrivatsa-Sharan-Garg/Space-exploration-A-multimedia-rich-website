@@ -42,10 +42,11 @@ def load_json_data(filename: str) -> Dict[str, Any]:
 async def get_all_space_facts() -> Dict[str, Any]:
     return load_json_data("facts.json")
 
+@app_router.get("/universe")
+async def get_all_space_facts() -> Dict[str, Any]:
+    return load_json_data("universe.json")
+
 @app_router.get("/planets")
 async def get_all_space_facts() -> Dict[str, Any]:
     return load_json_data("planets.json")
 
-@app_router.get("/gallery")
-async def get_all_space_facts() -> Dict[str, Any]:
-    return load_json_data("universe.json")

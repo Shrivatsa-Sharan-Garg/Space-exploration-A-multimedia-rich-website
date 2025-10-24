@@ -7,8 +7,6 @@ Project Description
 ### Todo
 
 - [ ] complete backend use python + mongo db compass no need to use mongo db atlas keep it local  
-- [ ] add dataset like imgs and content min 10 if want can add more  
-- [ ] complete json files  
 - [ ] add the path to the backend to make request  
 - [ ] add the link to the js file to make request to endpoints  
 
@@ -17,4 +15,6 @@ Project Description
 
 ### Done ✓
 
+- [x] complete json files  
+- [x] add dataset like imgs and content min 10 if want can add more  
 
