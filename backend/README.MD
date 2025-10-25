@@ -22,6 +22,9 @@ We use a **virtual environment** (`venv`) to isolate project dependencies and pr
 Run this command in the project's root directory:
 
 ```bash
+cd backend
+```
+```bash
 python -m venv venv
 ```
 ### 2.2. Activate the Environment
@@ -54,7 +57,7 @@ pip install -r requirements.txt
 ### 📝 Note:
 If setting up for the first time and requirements.txt does not exist, you can generate it by running:
 ```bash
-pip install fastapi uvicorn
+pip install fastapi uvicorn pymongo
 ```
 ```bash
 pip freeze > requirements.txt
