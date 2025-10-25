@@ -1,10 +1,6 @@
 const FACTS_API_URL = 'http://127.0.0.1:8000/universe';
 const factsContainer = document.querySelector('.Universe');
 
-/**
- * Renders a single fact card onto the UI.
- * @param {object} fact - An object containing fact data (e.g., { name, img, fact }).
- */
 function renderFactCard(item) {
     const imgContainer = document.createElement("div");
     imgContainer.classList.add("image-container");
@@ -31,7 +27,6 @@ function renderFactCard(item) {
     imgContainer.appendChild(caption);
     factsContainer.appendChild(imgContainer);
 }
-
 
 async function fetchUniverseFacts() {
     try {
@@ -63,10 +58,6 @@ async function fetchUniverseFacts() {
     }
 }
 
-/**
- * Creates the animated star background.
- * @param {number} count - The number of stars to create.
- */
 function createStars(count) {
     const background = document.querySelector('.background');
     for (let i = 0; i < count; i++) {
@@ -79,8 +70,8 @@ function createStars(count) {
         star.style.width = `${Math.random() * 2 + 1}px`;
         star.style.height = star.style.width;
 
-        const duration = Math.random() * 15 + 10; 
-        const delay = Math.random() * -15; 
+        const duration = Math.random() * 15 + 10;
+        const delay = Math.random() * -15;
 
         star.style.setProperty('--duration', `${duration}s`);
         star.style.setProperty('--delay', `${delay}s`);

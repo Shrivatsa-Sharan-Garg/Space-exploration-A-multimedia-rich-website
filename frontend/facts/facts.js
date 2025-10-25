@@ -6,7 +6,7 @@ function createStars(count) {
         const x = Math.random() * 100;
         const y = Math.random() * 100;
         const animationDuration = Math.random() * 5 + 5;
-        const size = Math.random() * 2 + 1; 
+        const size = Math.random() * 2 + 1;
 
         star.style.left = `${x}%`;
         star.style.top = `${y}%`;
@@ -19,12 +19,6 @@ function createStars(count) {
     }
 }
 
-/**
- * Renders a single fact card onto the UI.
- * It assumes the fact data has 'img' and 'fact' or 'description' fields.
- * @param {object} factData - An object containing { name?, img, fact }.
- * Note: 'name' is optional, for the card title.
- */
 function renderFactCard(factData) {
     const factsContainer = document.querySelector('.Facts');
     const imgContainer = document.createElement("div");
@@ -75,7 +69,7 @@ async function fetchAndRenderFacts() {
     } catch (error) {
         console.error('Error fetching or processing facts data:', error);
         factsContainer.innerHTML = `<p style="color: red; text-align: center; padding-top: 50px;">
-            Failed to load facts. Check your FastAPI server at 
+            Failed to load facts. Check your FastAPI server at
             <strong>${apiEndpoint}</strong> and ensure the server is running.
         </p>`;
     }

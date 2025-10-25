@@ -2,13 +2,9 @@ const PLANETS_API_URL = 'http://127.0.0.1:8000/planets';
 const container = document.getElementById('planets');
 const loadingMessage = document.getElementById('loading-message');
 
-/**
- * Renders the dynamic HTML for a single planet card.
- * @param {Object} planet - The planet object from the API.
- */
 function createPlanetCard(planet) {
     const article = document.createElement('article');
-    article.className = 'planet-card'; 
+    article.className = 'planet-card';
     article.id = planet.name.toLowerCase().replace(/\s+/g, '-');
     const h3 = document.createElement('h3');
     h3.textContent = planet.name;
