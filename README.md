@@ -49,14 +49,16 @@ To set up the website locally on your machine, follow the steps below.
    cd Space-exploration-A-multimedia-rich-website
    ```
 
+3. **Backend Integration**
+- The frontend interacts with a FastAPI backend running locally at [http://127.0.0.1:8000](http://127.0.0.1:8000).  
+- Ensure the backend is running to fetch space facts, gallery images, and handle contact form submissions.
 3. **Open the Files:**
    
-   You can open the website files directly in your web browser, or use a code editor to make any changes. To open the website in your browser:
+- You can open the website files directly in your web browser, or use a code editor to make any changes. To open the website in your browser:
    
-   Open `index.html` or any other HTML file in your browser by double-clicking on it or by using the "Open with" option in your browser.
+- Open `index.html` or any other HTML file in your browser by double-clicking on it or by using the "Open with" option in your browser.
 
-4. **Optional - Customize Content:**
-   
+4. **Optional - Customize Content:**  
    If you want to make changes to the website content or styling, you can modify the following files:
 
 - `HTML Files`: Located in the root directory (e.g., `index.html`, contact.html, planets.html, etc.)
@@ -70,7 +72,7 @@ To set up the website locally on your machine, follow the steps below.
    Alternatively, you can host the website using a local server, but it is not required for viewing basic content.
 
 ## Technologies Used
-[![My Skills](https://skillicons.dev/icons?i=html,css,js)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,py,fastapi,mongo)](https://skillicons.dev)
 - **HTML** for structuring the content.
 - **CSS** for styling the pages and ensuring responsiveness.
 - **JavaScript** for form validation and page interactivity.

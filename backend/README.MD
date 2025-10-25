@@ -8,7 +8,7 @@ This document provides all the necessary instructions for setting up the local d
 
 Before starting, ensure you have the following installed on your system:
 
-* **Python (3.11+):** The language environment required to run the application.
+* **Python (3.13+):** The language environment required to run the application.
 * **Git:** (Recommended) For cloning the repository and managing code versions.
 
 ---
