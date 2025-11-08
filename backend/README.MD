@@ -33,8 +33,8 @@ Each team member must activate the virtual environment **every time** they start
 
 | Operating System             | Command                     |
 | ---------------------------- | --------------------------- |
-| **Windows (PowerShell)**     | `venv\Scripts\Activate.ps1` |
-| **Windows (Command Prompt)** | `venv\Scripts\activate`     |
+| **Windows (PowerShell)**     | `.\venv\Scripts\Activate.ps1` |
+| **Windows (Command Prompt)** | `.\venv\Scripts\activate`     |
 | **Linux/macOS (Bash)**       | `source venv/bin/activate`  |
 
 > ⚠️ **Verification:**  
