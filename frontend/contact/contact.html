@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Space Exploration</title>
+    <link rel="stylesheet" href="./contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="messageBox" class="message-box">
+        <p id="messageText" class="message-text"></p>
+        <button onclick="document.getElementById('messageBox').style.display='none'" class="close-btn">Close</button>
+    </div>
+
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <a href="../../index.html" class="nav-link">🏠 Home</a>
+            <a href="../universe/universe.html" class="nav-link">The Universe</a>
+            <a href="../planets/planets.html" class="nav-link">Planets</a>
+            <a href="../facts/facts.html" class="nav-link">Facts</a>
+            <a href="../gallery/gallery.html" class="nav-link">Gallery</a>
+            <a href="#" class="nav-link nav-active">Contact Us</a>
+        </div>
+    </nav>
+
+    <div class="form-wrapper">
+        <h2 class="form-title">Connect with Us</h2>
+        <form id="contactForm" class="contact-form">
+
+            <div class="form-group">
+                <label for="name" class="form-label">Full Name *</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required
+                    class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="phone" class="form-label">Phone Number (Optional)</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="subject" class="form-label">Subject (Optional)</label>
+                <input type="text" id="subject" name="subject" placeholder="Enter the subject of your message"
+                    class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="message" class="form-label">Message *</label>
+                <textarea id="message" name="message" placeholder="Write your message here..." required
+                    class="form-input form-textarea"></textarea>
+            </div>
+
+            <div class="submit-area">
+                <button type="submit" id="submitBtn" class="submit-btn">
+                    Submit Message
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <div class="footer-spacer"></div>
+
+    <script src="./contact.js"></script>
+</body>
+
+</html>

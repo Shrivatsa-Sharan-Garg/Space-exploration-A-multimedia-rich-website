@@ -1,0 +1,94 @@
+{
+    "universe":[
+        {
+            "name":"Death Star Galaxy",
+            "img":"https://mumbaimirror.indiatimes.com/photo/15768089.cms",
+            "fact":"Scientists have named a galaxy, 'Death Star Galaxy' because it is shooting an energetic blast of energy from its super massive black hole at its companion galaxy & thereby destroying it."
+        },
+        {
+            "name":"Weight of Neutron Star Matter",
+            "img":"https://th.bing.com/th/id/OIP.2gh5nHnJrTXoTT8U3v7EXgHaHa?w=169&h=180&c=7&r=0&o=7&cb=12&dpr=1.3&pid=1.7&rm=3",
+            "fact":"A teaspoon of matter taken from a neutron star would weight around 10 billion tons, which is similar to the weight of an average mountain on earth."
+        },
+        {
+            "name":"The Boomerang Nebula",
+            "img":"https://tse1.mm.bing.net/th/id/OIP.3Y-2VOb0Y6YlzEi0kPDsjwHaG3?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
+            "fact":"The coldest known natural place in the universe is the Boomerang Nebula. At -272.15°C it is 1°C warmer than absolute zero, and 2°C colder than background radiation from the Big Bang."
+        },
+        {
+            "name":"The Largest Black Hole",
+            "img":"https://tse3.mm.bing.net/th/id/OIP.zEjhCG5T97Y4m_hZjNJ37QHaFY?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
+            "fact":"The Largest known black hole (Holmberg 15A) has a diameter of 1 trillion km, more than 190 times the distance from the Sun to Pluto."
+        },
+        {
+            "name":"Rogue Planets",
+            "img":"https://cdn.britannica.com/23/261823-050-0B847799/Rogue-planet-artist-concept-illustration-NASA.jpg?w=400&h=300&c=crop",
+            "fact":"There are billions of rogue planets in our Milky Way galaxy alone. These planets do not orbit a star and instead drift through space on their own."
+        },
+        {
+            "name":"Diamond Planet",
+            "img":"https://static1.srcdn.com/wordpress/wp-content/uploads/2022/06/cancri-55-e-3d-model.jpg",
+            "fact":"There is a planet made of diamond called 55 Cancri e. It is located 40 light-years away from Earth and is twice the size of our planet."
+        },
+        {
+            "name":"Galactic Cannibalism",
+            "img":"https://tse1.mm.bing.net/th/id/OIP.5zXTaE3lsnDa37JZbJgZYgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3",
+            "fact":"Our Milky Way galaxy is currently consuming at least 14 smaller galaxies, including the Sagittarius Dwarf Galaxy and the Canis Major Dwarf Galaxy."
+        },
+        {
+            "name":"The Observable Universe",
+            "img":"https://tse2.mm.bing.net/th/id/OIP.jLpkhk9OVOSJcEjRp3lLvwHaDt?rs=1&pid=ImgDetMain&o=7&rm=3",
+            "fact":"The observable universe is estimated to be about 93 billion light-years in diameter, meaning that light from the farthest objects we can see has taken 13.8 billion years to reach us."
+        },
+        {
+            "name":"Cosmic Microwave Background",
+            "img":"https://cdn.mos.cms.futurecdn.net/9HXKAsNw5LtSRHFPWfeqiB.jpg",
+            "fact":"The Cosmic Microwave Background (CMB) is the afterglow of the Big Bang and provides a snapshot of the universe when it was just 380,000 years old. It is a crucial source of information about the early universe."
+        },
+        {
+            "name":"Fast Radio Bursts",
+            "img":"https://th.bing.com/th/id/R.119b67a718114b89726bb9375b84932a?rik=gCDipFQLw%2b7WeQ&riu=http%3a%2f%2fen.es-static.us%2fupl%2f2018%2f01%2ffast-radio-burst-Green-Bank-e1515608387676.jpg&ehk=8xug5Gr4zDj1Jzt2YBG6sbhJaVcEDutwX3GhqGJhDMg%3d&risl=&pid=ImgRaw&r=0",
+            "fact":"Fast Radio Bursts (FRBs) are extremely powerful bursts of radio waves that last only a few milliseconds. Their origin is still a mystery, but they are believed to come from distant galaxies."
+        },
+        {
+            "name":"Interstellar Object 'Oumuamua",
+            "img":"https://imgix.bustle.com/inverse/c4/d8/fa/95/5dbd/4870/9193/95fe3e9a00e0/800px-artistsimpressionofoumuamua-copyjpg.jpeg?w=1200&h=630&fit=crop&crop=faces&fm=jpg",
+            "fact":"'Oumuamua is the first known interstellar object to pass through our solar system. Discovered in 2017, its unusual shape and trajectory sparked speculation about its origin, with some suggesting it could be an alien probe."
+        },
+        {
+            "name":"The Great Attractor",
+            "img":"https://1.bp.blogspot.com/-tkF9i5o3wyY/VvfAFojs8yI/AAAAAAAAFao/fpjz6HTn7xMcd8mB4kI_QUfliXuClqSWA/s400/pic.png",
+            "fact":"The Great Attractor is a mysterious gravitational anomaly located in the direction of the Centaurus and Hydra constellations. It is pulling our Milky Way galaxy and hundreds of thousands of other galaxies towards it at an incredible speed."
+        },
+        {
+            "name":"Cosmic Inflation",
+            "img":"https://tse2.mm.bing.net/th/id/OIP.nxY0xs-VSAabbz2Fq8OgBgHaEG?rs=1&pid=ImgDetMain&o=7&rm=3",
+            "fact":"Cosmic inflation is a theory that suggests the universe underwent an extremely rapid expansion in the first fraction of a second after the Big Bang. This expansion smoothed out any irregularities and set the stage for the formation of galaxies and other cosmic structures."
+        },
+        {
+            "name":"Pulsars as Cosmic Clocks",
+            "img":"https://nanograv.org/sites/default/files/styles/large/public/2022-09/MSP_Diagram.png?itok=bWGONS1X",
+            "fact":"Pulsars are highly magnetized, rotating neutron stars that emit beams of electromagnetic radiation. They are incredibly precise in their rotation, making them some of the most accurate natural clocks in the universe."
+        },
+        {
+            "name":"Dark Matter",
+            "img":"https://i.natgeofe.com/n/f9954a0f-f88e-4ebe-b2c0-39d531a95afc/48384.jpg",
+            "fact":"Dark matter is a mysterious substance that makes up about 27% of the universe's mass-energy content. It does not emit, absorb, or reflect light, making it invisible and detectable only through its gravitational effects on visible matter."
+        },
+        {
+            "name":"The Multiverse Theory",
+            "img":"https://stargazingireland.com/wp-content/uploads/2024/02/Multiverse-Wonders-Unlocking-the-Mysteries-of-Other-Dimensions-and-Parallel-Universes.jpg",
+            "fact":"The multiverse theory suggests that our universe is just one of many universes that exist simultaneously. These universes may have different physical laws and constants, leading to a vast array of possible realities."
+        },
+        {
+            "name":"Gravitational Waves",
+            "img":"https://www.iasexam.com/wp-content/uploads/3-6-780x470.webp",
+            "fact":"Gravitational waves are ripples in the fabric of spacetime caused by the acceleration of massive objects, such as merging black holes or neutron stars. They were first directly detected in 2015, confirming a major prediction of Einstein's theory of general relativity."
+        },
+        {
+            "name":"The Hubble Deep Field",
+            "img":"https://th.bing.com/th/id/R.092e074c27a09493a5e9e4ab6999365b?rik=p5eZRCvm4OcvJw&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f5%2f0%2f5%2f598137.jpg&ehk=nPhzHSE56IQ2ZxK5mt0nzqz33TqrSilEDpw8FRghVw0%3d&risl=&pid=ImgRaw&r=0",
+            "fact":"The Hubble Deep Field is an image taken by the Hubble Space Telescope that reveals thousands of galaxies in a tiny patch of sky. It provides a glimpse into the early universe and has helped astronomers understand galaxy formation and evolution."
+        }
+    ]
+}

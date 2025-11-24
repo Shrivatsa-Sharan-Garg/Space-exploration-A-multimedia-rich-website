@@ -1,0 +1,209 @@
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #f9fafb;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    background-color: #1f2937;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    padding: 0.75rem;
+    gap: 1rem;
+}
+
+
+@media (min-width: 768px) {
+    .nav-container {
+        gap: 2rem;
+    }
+}
+
+.nav-link {
+    color: white;
+    padding: 0.25rem 0.5rem;
+    transition: color 150ms ease-in-out;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 9999px;
+}
+
+.nav-link:hover {
+    color: #60a5fa;
+}
+
+.nav-active {
+    font-weight: 700;
+    background-color: #2563eb;
+    padding: 0.25rem 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -2px rgba(0, 0, 0, 0.06);
+}
+
+.form-wrapper {
+    max-width: 42rem;
+    margin: 3rem auto 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border: 1px solid #f3f4f6;
+}
+
+.form-title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #111827;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #4b5563;
+    margin-bottom: 0.25rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.75rem 1.25rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    transition: all 150ms ease-in-out;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+}
+
+.form-textarea {
+    resize: vertical;
+    height: 9rem;
+}
+
+.submit-area {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 0.75rem 2.5rem;
+    background-color: #2563eb;
+    color: white;
+    font-weight: 800;
+    font-size: 1.125rem;
+    border-radius: 9999px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: all 300ms ease-in-out;
+    border: none;
+    cursor: pointer;
+}
+
+@media (min-width: 640px) {
+    .submit-btn {
+        width: 66.666667%;
+    }
+}
+
+.submit-btn:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.01);
+}
+
+.submit-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.5);
+}
+
+.footer-spacer {
+    height: 4rem;
+}
+
+.message-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2),
+        0 10px 10px -5px rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+    display: none;
+    text-align: center;
+    max-width: 90%;
+    width: 350px;
+    border: 1px solid;
+    transition: opacity 0.3s ease;
+    background-color: white;
+}
+
+.message-text {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.close-btn {
+    padding: 0.5rem 1.25rem;
+    color: white;
+    border-radius: 9999px;
+    transition: all 150ms ease-in-out;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border: none;
+    cursor: pointer;
+}
+
+.message-box.success {
+    background-color: #f0fff4;
+    border-color: #68d391;
+    color: #2f855a;
+}
+
+.message-box.success .close-btn {
+    background-color: #38a169;
+}
+
+.message-box.success .close-btn:hover {
+    background-color: #276749;
+}
+
+.message-box.error {
+    background-color: #fff5f5;
+    border-color: #fc8181;
+    color: #c53030;
+}
+
+.message-box.error .close-btn {
+    background-color: #e53e3e;
+}
+
+.message-box.error .close-btn:hover {
+    background-color: #c53030;
+}
