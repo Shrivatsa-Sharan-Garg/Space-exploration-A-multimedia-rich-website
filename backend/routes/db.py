@@ -2,7 +2,7 @@ import os
 import logging
 from dotenv import load_dotenv
 from motor.motor_asyncio import AsyncIOMotorClient 
-from motor.core import AgnosticDatabase, AgnosticCollection # Type hints for clarity
+from motor.core import AgnosticDatabase, AgnosticCollection 
 
 load_dotenv()
 
